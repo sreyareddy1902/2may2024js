@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*---regular function/named function
+        function demo()
+        {
+            console.log("hello");
+        }
+        demo()
+        -----*/
+
+        /*----function with parameters
+        function add(a,b)
+        {
+            sum=a+b
+            console.log(sum)
+        }
+        add(2,3)
+        add(10,20)
+        add(6,7)
+        ------*/
+
+        /*-----function with return type
+        function add(a,b)
+        {
+            return a+b
+        }
+        let x=add(1,4)   //console.log(add(1,4))
+        console.log(x)
+        ------*/
+
+        /*---anonymous function
+        function()
+        {
+            console.log("hii")
+        }
+        ----*/
+
+        /*-----function with expresiion
+        let x=function()
+        {
+            console.log('hello')
+        }
+        x()
+        ----*/
+
+        /*---first class citizen
+        let x=function ()
+        {
+            console.log("hello")
+        }
+        x()
+        ------*/
+
+        /*----arrow function
+
+        let x=()=>{
+            console.log("hii")
+        }
+        x()
+
+        let x1=()=>console.log("hii")
+        x1()
+
+        let x2=(p1,p2)=>{
+            sum=p1+p2
+            return sum
+        };
+        console.log(x2(3,4));
+
+
+        let x4=(a)=>{
+            console.log('hii')
+            console.log("hello")
+        }
+        x4()
+        ----*/
+
+        /*-----arity function
+        function demo()   //nullary function
+        {
+            console.log('hello')
+        }
+        demo()
+
+        function demo1(a)   //unary function
+        {
+            console.log(a)
+        }
+        demo1(5)
+
+        function demo2(a,b)   //binary function
+        {
+            console.log(a+b)
+        }
+        demo2(5,10)
+
+        function demo3(a,b,c)   //terinary function
+        {
+            console.log(a+b+c)
+        }
+        demo3(5,10,9)
+
+        function demo4(a,b,c,d,e)
+        {
+            console.log(a+b+c+d+e)
+        }
+        demo4(7,2,1,8,9)
+        ------*/
+
+
+        /*------closures
+        function demo1()
+        {
+            let x=10
+            function demo2()
+            {
+                console.log("hello")
+            }
+            return demo2
+        }
+        let res=demo1()
+        res()
+        ------*/
+
+        /*---immediate invoke function expression
+        (function()
+        {
+            console.log("hii")
+        })();
+        ------*/
+
+
+        /*--------higher order and call back
+        function fun(a,b)
+        {
+            console.log(a+b)
+        }
+        function notfun(x,y,z)
+        {
+            console.log(x)
+            console.log(y)
+            console.log(z(x,y))
+            console.log(z(fun)) //call back function   and notfun is higher order function
+        }
+
+        let x=console.log(10,20)
+        ------*/
+
+
+        /*-----generator function
+        function * fun()
+        {
+            yield "john"
+            yield "raj"
+            yield "ram"
+        }
+
+        let x=fun()
+        console.log(x.next().value)
+        console.log(x.next().value)
+        console.log(x.next().value)
+        ------*/
+
+        
+        
+    </script>
+</body>
+</html>
